@@ -1,0 +1,21 @@
+Modelos
+	ClsCasilla
+		-esBomba: boolean {get; set;}
+		-revelado: boolean {get; set;}
+		-imagen: string {get;}
+
+	ClsTablero
+		-Casillas: List<ClsCastilla>
+		-CasillaSelccionada: ClsCasilla
+		-lado: int
+		-numeroBombas: int
+
+BL
+	ClsTablero generarTablero(int dificultad)
+
+UI
+	Models
+		ViewModels
+			MainPageVM
+				-tablero: ClsTablero
+				-dificultad: int
