@@ -29,5 +29,23 @@ namespace BL
             }
             return tablero;
         }
+
+        public int GeTNumeroVidas(int dificultad)
+        {
+            int vidas;
+            switch (dificultad)
+            {
+                case 1:
+                    vidas = 5;
+                    break;
+                case 2:
+                    vidas = 4;
+                    break;
+                default:
+                    vidas = 3;
+                    break;
+            }
+            return vidas;
+        }
     }
 }

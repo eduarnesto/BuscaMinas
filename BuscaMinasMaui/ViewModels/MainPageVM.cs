@@ -44,9 +44,8 @@ namespace BuscaMinasMaui.ViewModels
         #region Constructores
         public MainPageVM()
         {
-            this.
-        }
 
+        }
         #endregion
     }
 }
