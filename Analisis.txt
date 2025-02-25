@@ -5,17 +5,23 @@ Modelos
 		-imagen: string {get;}
 
 	ClsTablero
-		-Casillas: List<ClsCastilla>
-		-CasillaSelccionada: ClsCasilla
-		-lado: int
-		-numeroBombas: int
+		-Casillas: List<ClsCastilla> {get;}
+		-CasillaSelccionada: ClsCasilla {set;}
+		-lado: int {get;}
+		-numeroBombas: int {get;}
+		-dificultad: int {get;}
+		-numBombas: int {get;}
+		-vidas: int {get;}
+		-aciertos: int {get;}
 
 BL
-	ClsTablero generarTablero(int dificultad)
+	int GetNumeroBombas(int dificultad)
+	int GetCasillasARevelar(int dificultad)
+	int GetLadoTablero(int dificultad)
+	int GetNumeroVidas(int dificultad)
 
 UI
 	Models
 		ViewModels
 			MainPageVM
 				-tablero: ClsTablero
-				-dificultad: int
